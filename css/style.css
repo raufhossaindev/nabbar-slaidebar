@@ -1,0 +1,166 @@
+@import url(https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+
+* {
+  font-family: "PT Sans", sans-serif;
+}
+
+.bg-custom-blue {
+  background: #1a54e7;
+}
+
+.text-custom-blue {
+  color: #1a54e7;
+}
+
+/* Header style */
+header {
+  background: white;
+}
+
+header a {
+  line-height: 70px;
+}
+
+img.small-icon {
+  height: 23px;
+}
+
+ul#main-nav {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  margin-top: -1px;
+}
+
+ul#main-nav li:first-child {
+  background: #f6f6f6;
+  padding: 23px;
+  margin-left: -12px;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header a {
+  line-height: 70px;
+}
+
+ul#main-nav li a {
+  text-decoration: none;
+  color: rgb(78, 78, 78);
+  padding: 25px 10px;
+}
+
+ul#category-nav {
+  padding: 0;
+  margin: 0;
+}
+
+ul#category-nav li a {
+  text-decoration: none;
+  color: #1a54e7;
+  padding: 25px 10px;
+  position: relative;
+}
+
+ul#category-nav li a:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #1a54e7;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease-in-out;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz-transition: width 0.3s ease-in-out;
+  -ms-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+}
+
+.toggle {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #f8f8f8;
+  border-radius: 3px;
+  padding: 5px;
+  margin-top: 17px;
+}
+
+.toggle span {
+  width: 100%;
+  display: block;
+  height: 2px;
+  background: #ffffff;
+  margin-top: 4px;
+  margin-bottom: 6px;
+}
+
+#nav.active {
+  display: block !important;
+}
+
+/* Header style end  */
+
+/* slider styles  */
+.home-slider {
+  overflow: hidden;
+}
+
+.slider-item {
+  height: 100vh;
+}
+
+.slider-bg-1 {
+  background: url(../images/sliders/slider-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slider-bg-2 {
+  background: url(../images/sliders/slider-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slick-prev:before {
+  content: "\f104";
+  font-family: "FontAwesome";
+  color: rgb(5 5 5);
+  line-height: 3px;
+  margin-left: -15px;
+  font-size: 50px;
+}
+
+.slick-next:before {
+  content: "\f105";
+  font-family: "FontAwesome";
+  color: rgb(5 5 5);
+  line-height: 3px;
+  margin-left: -10px;
+  font-size: 50px;
+}
+
+.slick-prev {
+  left: 0;
+  padding: 34px;
+  background: white;
+}
+
+.slick-next {
+  right: 0;
+  padding: 34px;
+  background: white;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  background: #ffffffa3;
+}
+/* slider styles end */
